@@ -1,3 +1,5 @@
+* api server for rateurspeakr (rateurspeakr.herokuapp.com)
+
 * bottle.py Heroku-compatible sample app
   Just say
   : git push heroku master
@@ -8,8 +10,8 @@
 * Installing development environment
   To install [[http://bottlepy.org/docs/dev/][Bottle framework]] into a
   virtualenv:
-  : virtualenv env
-  : source env/bin/activate
+  : virtualenv venv
+  : source venv/bin/activate
   : pip install -r requirements.txt
 
   You might also want to add =reloader=False= to the bottle.run call to enable
