@@ -12,7 +12,7 @@ if __name__=="__main__":
 	for name in names:
 		speakrs.append({
 			"name" : name,
-			"talks" : [int(random.random()*len(titles))+1],
+			"talk_ids" : [int(random.random()*len(titles))+1],
 			"_id"	: _id
 			})
 		_id += 1

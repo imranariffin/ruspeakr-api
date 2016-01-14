@@ -177,7 +177,7 @@ def __get_talks_by_speakrid(speakr_id):
 	# ASSERTS
 	assert(type(speakr_id) == type(int()))
 
-	talk_ids = map(int, __get_speakr_by_id(speakr_id)['talks'])
+	talk_ids = map(int, __get_speakr_by_id(speakr_id)['talk_ids'])
 	def find_talks(talk):
 		if int(talk['_id']) in talk_ids:
 			return True

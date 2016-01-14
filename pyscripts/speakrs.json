@@ -1,102 +1,102 @@
 {
     "speakrs": [
         {
-            "talks": [
-                7
-            ], 
             "_id": 1, 
-            "name": "Imran"
-        }, 
-        {
-            "talks": [
-                3
-            ], 
-            "_id": 2, 
-            "name": "Afiq"
-        }, 
-        {
-            "talks": [
-                10
-            ], 
-            "_id": 3, 
-            "name": "Amier"
-        }, 
-        {
-            "talks": [
-                9
-            ], 
-            "_id": 4, 
-            "name": "Hassan"
-        }, 
-        {
-            "talks": [
-                2
-            ], 
-            "_id": 5, 
-            "name": "Fawwaz"
-        }, 
-        {
-            "talks": [
+            "name": "Imran", 
+            "talk_ids": [
                 6
-            ], 
+            ]
+        }, 
+        {
+            "_id": 2, 
+            "name": "Afiq", 
+            "talk_ids": [
+                10
+            ]
+        }, 
+        {
+            "_id": 3, 
+            "name": "Amier", 
+            "talk_ids": [
+                2
+            ]
+        }, 
+        {
+            "_id": 4, 
+            "name": "Hassan", 
+            "talk_ids": [
+                7
+            ]
+        }, 
+        {
+            "_id": 5, 
+            "name": "Fawwaz", 
+            "talk_ids": [
+                3
+            ]
+        }, 
+        {
             "_id": 6, 
-            "name": "Naufal"
+            "name": "Naufal", 
+            "talk_ids": [
+                10
+            ]
         }, 
         {
-            "talks": [
-                10
-            ], 
             "_id": 7, 
-            "name": "Amin"
+            "name": "Amin", 
+            "talk_ids": [
+                10
+            ]
         }, 
         {
-            "talks": [
-                3
-            ], 
             "_id": 8, 
-            "name": "Hafizul"
+            "name": "Hafizul", 
+            "talk_ids": [
+                9
+            ]
         }, 
         {
-            "talks": [
-                1
-            ], 
             "_id": 9, 
-            "name": "Hazwan"
+            "name": "Hazwan", 
+            "talk_ids": [
+                6
+            ]
         }, 
         {
-            "talks": [
-                10
-            ], 
             "_id": 10, 
-            "name": "Fiqri"
+            "name": "Fiqri", 
+            "talk_ids": [
+                8
+            ]
         }, 
         {
-            "talks": [
-                1
-            ], 
             "_id": 11, 
-            "name": "Arif"
-        }, 
-        {
-            "talks": [
+            "name": "Arif", 
+            "talk_ids": [
                 1
-            ], 
+            ]
+        }, 
+        {
             "_id": 12, 
-            "name": "Faris"
+            "name": "Faris", 
+            "talk_ids": [
+                4
+            ]
         }, 
         {
-            "talks": [
-                10
-            ], 
             "_id": 13, 
-            "name": "Eddy"
+            "name": "Eddy", 
+            "talk_ids": [
+                2
+            ]
         }, 
         {
-            "talks": [
-                3
-            ], 
             "_id": 14, 
-            "name": "Afzym"
+            "name": "Afzym", 
+            "talk_ids": [
+                9
+            ]
         }
     ]
 }
