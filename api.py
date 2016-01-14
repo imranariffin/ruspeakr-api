@@ -107,27 +107,83 @@ def __geek():
 # --------------------------------------------- #
 # speakrs api:
 # 	ready:
-# 		__get_speakrs() => [{speakrs}]
+# 		__get_speakrs() 				=> [{speakrs}]
+# 		__get_speakr_by_id(speakr_id) 	=> {speakr}
 # --------------------------------------------- #
+
+def __get_speakrs_dict():
+	f_speakrs = open("./pyscripts/speakrs.json")
+	speakrs = json.loads(f_speakrs.read())['speakrs']
+	return speakrs
 
 def __get_speakrs():
 	# mock
-	f_speakrs = open("./pyscripts/speakrs.json")
-	speakrs = json.loads(f_speakrs.read())['speakrs']
+	speakrs = __get_speakrs_dict()
 	return json.dumps(speakrs)
+
+def __get_speakr_by_id(speakr_id):
+	# mock
+
+	# ASSERTS
+	assert(type(speakr_id) == type(int()))
+
+	speakrs = __get_speakrs_dict()
+	def find_speakr(speakr):
+		if int(speakr['_id']) == speakr_id:
+			return True
+		return False
+
+	speakrs = __get_speakrs_dict()
+	speakrs = filter(find_speakr, speakrs)
+	if speakrs != []:
+		return speakrs[0]
+	else:
+		return {}
 
 # --------------------------------------------- #
 # speakrs api:
 # 	ready:
+# 		__get_talks()				=> [{talks}]
 # 	todo:
-# 		__get_talks()	=> [{talks}]
-# 		__rate_talk() => {status}
+# 		__get_talk_by_id(talk_id)	=> {talk}
+# 		__rate_talk() 				=> {status}
+# 		__get_talks_by_speakrid		=> [{talks}]
 # --------------------------------------------- #
 
-def __get_talks():
+def __get_talks_dict():
 	# mock
 	f_talks = open("./pyscripts/talks.json")
 	talks = json.loads(f_talks.read())['talks']
+	return talks
+
+def __get_talks():
+	talks = __get_talks_dict()
+	return json.dumps(talks)
+
+def __get_talk_by_id(talk_id):
+	# ASSERTS
+	assert(type(talk_id)==type(int()))
+
+	def find_talk(talk):
+		if int(talk['_id']) == talk_id:
+			return True
+		return False
+
+	talks = __get_talks_dict()
+	talk = filter(find_talk, talks)[0]
+	return talk
+
+def __get_talks_by_speakrid(speakr_id):
+	# ASSERTS
+	assert(type(speakr_id) == type(int()))
+
+	talk_ids = map(int, __get_speakr_by_id(speakr_id)['talks'])
+	def find_talks(talk):
+		if int(talk['_id']) in talk_ids:
+			return True
+	talks = __get_talks_dict()
+	talks =  filter(find_talks, talks)
+	print talks
 	return json.dumps(talks)
 
 # if __name__=="__main__":

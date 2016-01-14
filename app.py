@@ -60,18 +60,34 @@ def post_signup():
 def get_speakrs():
     return api.__get_speakrs()
 
+@get('/speakr')
+@enable_cors
+def get_speakr():
+    speakr_id = int(request.query.speakrId)
+    return api.__get_speakr_by_id(speakr_id)
+
 # --------------------------------------------- #
 # talks api:
 #   ready:
-#      GET /talks
+#       GET /talks
+#       GET /get-talk?talkId=talkId
 #   todo:
 #       POST /rate?talkId=talkId
-#       GET /get-talk?talkId=talkId
 # --------------------------------------------- #
 
 @get('/talks')
 @enable_cors
 def get_talks():
-    return api.__get_talks()
+    if request.query.speakrId != "":
+        speakr_id = request.query.speakrId
+        return api.__get_talks_by_speakrid(int(speakr_id))
+    else:
+        return api.__get_talks()
+
+@get('/talk')
+@enable_cors
+def get_talk():
+    talkId = int(request.query.talkId)
+    return api.__get_talk_by_id(talkId)
 
 bottle.run(host='0.0.0.0', port=argv[1])
