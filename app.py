@@ -46,4 +46,32 @@ def post_login(**user):
 def post_signup():
     return api.__post_signup()
 
+# --------------------------------------------- #
+# speakrs api:
+#   ready:
+#      GET /speakrs
+#   todo:
+#       POST /me/set-speech-title
+#       GET /speakr?id=id
+# --------------------------------------------- #
+
+@get('/speakrs')
+@enable_cors
+def get_speakrs():
+    return api.__get_speakrs()
+
+# --------------------------------------------- #
+# talks api:
+#   ready:
+#      GET /talks
+#   todo:
+#       POST /rate?talkId=talkId
+#       GET /get-talk?talkId=talkId
+# --------------------------------------------- #
+
+@get('/talks')
+@enable_cors
+def get_talks():
+    return api.__get_talks()
+
 bottle.run(host='0.0.0.0', port=argv[1])

@@ -1,60 +1,102 @@
 {
     "speakrs": [
         {
-            "name": "Imran", 
-            "title": "Khilafah Uthmaniyah"
+            "talks": [
+                7
+            ], 
+            "_id": 1, 
+            "name": "Imran"
         }, 
         {
-            "name": "Afiq", 
-            "title": "Beriman dengan Malaikat"
+            "talks": [
+                3
+            ], 
+            "_id": 2, 
+            "name": "Afiq"
         }, 
         {
-            "name": "Amier", 
-            "title": "Puasa"
+            "talks": [
+                10
+            ], 
+            "_id": 3, 
+            "name": "Amier"
         }, 
         {
-            "name": "Hassan", 
-            "title": "Puasa"
+            "talks": [
+                9
+            ], 
+            "_id": 4, 
+            "name": "Hassan"
         }, 
         {
-            "name": "Fawwaz", 
-            "title": "Puasa"
+            "talks": [
+                2
+            ], 
+            "_id": 5, 
+            "name": "Fawwaz"
         }, 
         {
-            "name": "Naufal", 
-            "title": "Haji"
+            "talks": [
+                6
+            ], 
+            "_id": 6, 
+            "name": "Naufal"
         }, 
         {
-            "name": "Amin", 
-            "title": "Solat"
+            "talks": [
+                10
+            ], 
+            "_id": 7, 
+            "name": "Amin"
         }, 
         {
-            "name": "Hafizul", 
-            "title": "Khilafah Uthmaniyah"
+            "talks": [
+                3
+            ], 
+            "_id": 8, 
+            "name": "Hafizul"
         }, 
         {
-            "name": "Hazwan", 
-            "title": "Solat"
+            "talks": [
+                1
+            ], 
+            "_id": 9, 
+            "name": "Hazwan"
         }, 
         {
-            "name": "Fiqri", 
-            "title": "Purification of the Heart"
+            "talks": [
+                10
+            ], 
+            "_id": 10, 
+            "name": "Fiqri"
         }, 
         {
-            "name": "Arif", 
-            "title": "Zakat"
+            "talks": [
+                1
+            ], 
+            "_id": 11, 
+            "name": "Arif"
         }, 
         {
-            "name": "Faris", 
-            "title": "Khilafah Uthmaniyah"
+            "talks": [
+                1
+            ], 
+            "_id": 12, 
+            "name": "Faris"
         }, 
         {
-            "name": "Eddy", 
-            "title": "Dakwah"
+            "talks": [
+                10
+            ], 
+            "_id": 13, 
+            "name": "Eddy"
         }, 
         {
-            "name": "Afzym", 
-            "title": "Haji"
+            "talks": [
+                3
+            ], 
+            "_id": 14, 
+            "name": "Afzym"
         }
     ]
 }

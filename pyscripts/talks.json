@@ -1,0 +1,54 @@
+{
+    "talks": [
+        {
+            "rating": 0, 
+            "_id": 1, 
+            "title": "Cinta Rasulullah"
+        }, 
+        {
+            "rating": 0, 
+            "_id": 2, 
+            "title": "Solat"
+        }, 
+        {
+            "rating": 0, 
+            "_id": 3, 
+            "title": "Zakat"
+        }, 
+        {
+            "rating": 0, 
+            "_id": 4, 
+            "title": "Haji"
+        }, 
+        {
+            "rating": 0, 
+            "_id": 5, 
+            "title": "Beriman dengan Malaikat"
+        }, 
+        {
+            "rating": 0, 
+            "_id": 6, 
+            "title": "Sirah"
+        }, 
+        {
+            "rating": 0, 
+            "_id": 7, 
+            "title": "Dakwah"
+        }, 
+        {
+            "rating": 0, 
+            "_id": 8, 
+            "title": "Purification of the Heart"
+        }, 
+        {
+            "rating": 0, 
+            "_id": 9, 
+            "title": "Khilafah Uthmaniyah"
+        }, 
+        {
+            "rating": 0, 
+            "_id": 10, 
+            "title": "Puasa"
+        }
+    ]
+}
